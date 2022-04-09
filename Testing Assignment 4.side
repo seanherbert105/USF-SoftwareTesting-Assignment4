@@ -1,0 +1,462 @@
+{
+  "id": "5589064f-85d2-4bba-8634-eb9ed80503f5",
+  "version": "2.0",
+  "name": "Testing Assignment 4",
+  "url": "https://demo.guru99.com/test/guru99home/",
+  "tests": [{
+    "id": "9ec9222e-a71e-467f-afa8-9e376c6fe2f4",
+    "name": "Sign-on Page",
+    "commands": [{
+      "id": "e43cf115-2ac6-4ca1-ab9a-7a8dd4824e90",
+      "comment": "Open Website",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/login.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df059ffa-0fe7-43c6-bea3-c7b4500260ed",
+      "comment": "Website",
+      "command": "setWindowSize",
+      "target": "1280x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16ba23fa-4f1a-4909-8663-b8ac025391b7",
+      "comment": "Email Login",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9405855-77ef-4b18-8bcf-a45d6a6d7383",
+      "comment": "Email Login Value",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sherbert105@gmail.com"
+    }, {
+      "id": "a661a260-f20e-49c4-8e56-7ab2e2edf684",
+      "comment": "Password",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "CrossFit!2"
+    }, {
+      "id": "d51b65ae-c8da-4e99-ae23-bb860cf3d8ac",
+      "comment": "Submission Button",
+      "command": "sendKeys",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "8bd87c15-0310-4332-91a2-de3d8882b593",
+    "name": "Register Page",
+    "commands": [{
+      "id": "27d80923-8833-4d76-9cbf-4880ab404d22",
+      "comment": "Open Website",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88086632-4136-45c9-8576-40685aeef073",
+      "comment": "Website",
+      "command": "setWindowSize",
+      "target": "1280x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2f88d04-9701-4c30-ae2c-77330357bffd",
+      "comment": "Register Link",
+      "command": "click",
+      "target": "css=tr:nth-child(10) a",
+      "targets": [
+        ["css=tr:nth-child(10) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Register \n                    here')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'register.php')])[2]", "xpath:href"],
+        ["xpath=//tr[10]/td/table/tbody/tr/td[2]/font/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2397a3bc-0800-4dbf-b92c-f685f736ab12",
+      "comment": "First Name Input Click",
+      "command": "click",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c6af4ea-39db-40e3-8696-1bf602a549ad",
+      "comment": "First Name Value",
+      "command": "type",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Sean"
+    }, {
+      "id": "845011bb-c5e0-4673-8846-eb76fdcf0bed",
+      "comment": "Last Name Value",
+      "command": "type",
+      "target": "name=lastName",
+      "targets": [
+        ["name=lastName", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='lastName']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Herbert"
+    }, {
+      "id": "2f87331b-85a1-4628-9ff3-0c083a28f8b6",
+      "comment": "Phone Number Value",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=tr:nth-child(4) > td > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "8132986817"
+    }, {
+      "id": "d61d90a9-a974-4a6c-a5b4-5fc858319086",
+      "comment": "Email Address Value",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "sherbert105@gmail.com"
+    }, {
+      "id": "4ebdc68c-28ca-41fb-8c02-65b3f98d0ef6",
+      "comment": "Address Value",
+      "command": "type",
+      "target": "name=address1",
+      "targets": [
+        ["name=address1", "name"],
+        ["css=tr:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='address1']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "4002 Cat Mint Street"
+    }, {
+      "id": "c0e45417-bd71-413e-89e3-61e43b04fca3",
+      "comment": "City Value",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Tampa"
+    }, {
+      "id": "ce2fdd50-0e58-49fe-86b4-58bd5c79c04b",
+      "comment": "State Value",
+      "command": "type",
+      "target": "name=state",
+      "targets": [
+        ["name=state", "name"],
+        ["css=tr:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='state']", "xpath:attributes"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": "FL"
+    }, {
+      "id": "326f30b5-ee14-4277-8a4a-17bf72bdaaa1",
+      "comment": "Postal Code Value",
+      "command": "type",
+      "target": "name=postalCode",
+      "targets": [
+        ["name=postalCode", "name"],
+        ["css=tr:nth-child(10) input", "css:finder"],
+        ["xpath=//input[@name='postalCode']", "xpath:attributes"],
+        ["xpath=//tr[10]/td[2]/input", "xpath:position"]
+      ],
+      "value": "33619"
+    }, {
+      "id": "d99be1ce-36ed-41d2-a3f3-833f4a547770",
+      "comment": "Country Drop Down Click",
+      "command": "click",
+      "target": "name=country",
+      "targets": [
+        ["name=country", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='country']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0497d183-2534-448b-a5a2-662f74194ca0",
+      "comment": "Country Value",
+      "command": "select",
+      "target": "name=country",
+      "targets": [],
+      "value": "label=UNITED STATES"
+    }, {
+      "id": "1dc63015-a819-4b81-9516-19fc58ca06aa",
+      "comment": "Username Input Click",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1448d12-e0dc-42cf-8f67-c527f5b2ffa2",
+      "comment": "Username Value",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": "sherbert105"
+    }, {
+      "id": "12777d3a-662a-4633-85e4-aaa090f13bee",
+      "comment": "Password Value",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(14) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[14]/td[2]/input", "xpath:position"]
+      ],
+      "value": "CrossFit!2"
+    }, {
+      "id": "8549030d-32ad-4164-93be-13ae57bb2590",
+      "comment": "Password Confirmation Value",
+      "command": "type",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": "CrossFit!2"
+    }, {
+      "id": "64ea1158-2a65-4b0c-860a-00f0c0f81c23",
+      "comment": "Submission Button",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[17]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "51d955fa-9e7e-4e26-a3de-ea2c866cb544",
+    "name": "Home Page",
+    "commands": [{
+      "id": "e1827597-1f10-423e-8434-9c8d3c9b2ac7",
+      "comment": "Open Website",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/guru99home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "978e4bfc-9699-40d2-8716-ff73c3d1cde6",
+      "comment": "Website",
+      "command": "setWindowSize",
+      "target": "1280x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6999070e-5827-4a33-9a97-5f8a5bbb06fd",
+      "comment": "Email Input",
+      "command": "click",
+      "target": "id=philadelphia-field-email",
+      "targets": [
+        ["id=philadelphia-field-email", "id"],
+        ["css=#philadelphia-field-email", "css:finder"],
+        ["xpath=//input[@id='philadelphia-field-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27de10a0-8888-4651-8bbb-dfede116ccc4",
+      "comment": "Email Value",
+      "command": "type",
+      "target": "id=philadelphia-field-email",
+      "targets": [
+        ["id=philadelphia-field-email", "id"],
+        ["css=#philadelphia-field-email", "css:finder"],
+        ["xpath=//input[@id='philadelphia-field-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sherbert105@gmail.com"
+    }, {
+      "id": "ae509a0d-1f1a-4f7c-b22f-6623625aad36",
+      "comment": "Course Selection",
+      "command": "click",
+      "target": "id=awf_field-91977689",
+      "targets": [
+        ["id=awf_field-91977689", "id"],
+        ["css=#awf_field-91977689", "css:finder"],
+        ["xpath=//select[@id='awf_field-91977689']", "xpath:attributes"],
+        ["xpath=//div[@id='rt-mainbody']/div/article/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26382cad-fb96-4258-9afb-a1e6e9c82cd4",
+      "comment": "Course Selection Value",
+      "command": "select",
+      "target": "id=awf_field-91977689",
+      "targets": [],
+      "value": "label=SAP FICO"
+    }, {
+      "id": "1212bf2b-d3d7-474e-8469-969b983f9112",
+      "comment": "Submit Button",
+      "command": "click",
+      "target": "id=philadelphia-field-submit",
+      "targets": [
+        ["id=philadelphia-field-submit", "id"],
+        ["css=#philadelphia-field-submit", "css:finder"],
+        ["xpath=//button[@id='philadelphia-field-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2e6156e-31ba-4c58-9db0-276cd3952bf9",
+      "comment": "Submit Button Message",
+      "command": "assertAlert",
+      "target": "Form Submitted Successfully...",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3a787321-6360-4afb-aa2c-b5ebefb9c584",
+    "name": "Flight Booking",
+    "commands": [{
+      "id": "7a4102e0-4255-4443-8fcc-3bf94dbe12b8",
+      "comment": "Open Website",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a07c781f-1636-4435-be6c-5ac666f0a3a6",
+      "comment": "Website",
+      "command": "setWindowSize",
+      "target": "1280x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40a7a066-3962-48a6-a029-f6d0d8f5c370",
+      "comment": "Email Login",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed837378-84eb-41c8-af48-521a01a046f4",
+      "comment": "Email Login Value",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "sherbert105@gmail.com"
+    }, {
+      "id": "1b983089-c235-4c6d-b49a-30ec39a4b5bc",
+      "comment": "Password Value",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "CrossFit!2"
+    }, {
+      "id": "c3a6f160-2d84-4033-8501-0dc75d6a90d7",
+      "comment": "Submission Button",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "14967fdd-4dbc-4906-acb0-7e69e107deef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9ec9222e-a71e-467f-afa8-9e376c6fe2f4"]
+  }],
+  "urls": ["https://demo.guru99.com/test/login.html", "https://demo.guru99.com/test/newtours/", "https://demo.guru99.com/test/guru99home/"],
+  "plugins": []
+}
